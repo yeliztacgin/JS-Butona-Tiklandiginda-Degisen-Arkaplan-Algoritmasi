@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .color{
+            border:2px solid #ccc;
+            padding:25px;
+        }
+        #btn{
+            height:50px;
+            
+
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <p><div id="result" class="color">Javascript ile butona tıklandığında arkaplan değiştirme</div></p>
+    <button type="button"id="btn">Change Background Color</button>
+<script>
+    var Btn, result, count = 0;
+    Btn = document.querySelector('#btn');
+    result = document.querySelector('#result');
+    Btn.addEventListener('click',function () {
+
+        if (count%2==0) {
+            result.style.backgroundColor = "blue";
+        }
+        else {
+            result.style.backgroundColor = "green";
+        }
+        count++;
+
+
+    });
+</script>
+
+
+</body>
+</html>
